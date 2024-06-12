@@ -28,11 +28,11 @@ class MyApp extends StatelessWidget {
         //'servidor' : (_) => Servidor(),
         //'gateway_page' : (_) => GatewayPage(),
         'samiya_page' : (_) => SamiyaPage(),
-        //'order_sealed' : (_) => OrderSealedPage(),
-        //'order_production' : (_) => OrderProductionPage(),
-        //'extrusion_report' : (_) => ExtrusionReport(),
-        //'print_joborder' : (_) => PrintJobOrder(),
-        //'print_report' : (_) => PrintReportPage(),
+        'order_sealed' : (_) => OrderSealedPage(),
+        'order_production' : (_) => OrderProductionPage(),
+        'extrusion_report' : (_) => ExtrusionReport(),
+        'print_joborder' : (_) => PrintJobOrder(),
+        'print_report' : (_) => PrintReportPage(),
       }, 
     );
   }

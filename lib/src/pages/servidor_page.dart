@@ -26,7 +26,7 @@ class Servidor extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Container(
-              width: MediaQuery.of(context).size.width - 40, 
+              width: MediaQuery.of(context).size.width - 40,
               decoration: BoxDecoration(
                 color: Color.fromARGB(40, 79, 92, 150),
                 borderRadius: BorderRadius.circular(20),

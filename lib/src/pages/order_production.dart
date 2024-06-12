@@ -24,9 +24,7 @@ class OrderProductionPage extends StatelessWidget {
           firstDate: DateTime(2000),
           lastDate: DateTime(2024),
         );
-        if (pickedDate != null) {
-          
-        }
+        if (pickedDate != null) {}
       },
     );
   }
@@ -72,15 +70,11 @@ class OrderProductionPage extends StatelessWidget {
             ),
             ListTile(
               title: Text('Opción 1'),
-              onTap: () {
-              
-              },
+              onTap: () {},
             ),
             ListTile(
               title: Text('Opción 2'),
-              onTap: () {
-                
-              },
+              onTap: () {},
             ),
           ],
         ),
@@ -144,15 +138,13 @@ class OrderProductionPage extends StatelessWidget {
                               inputFormatters: <TextInputFormatter>[
                                 FilteringTextInputFormatter.digitsOnly
                               ],
-                              style: TextStyle(
-                                  color: Colors.black), 
+                              style: TextStyle(color: Colors.black),
                               decoration: InputDecoration(
                                 hintText: 'Numero de orden',
                                 hintStyle: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 129, 129,
-                                        129)), 
+                                    color: Color.fromARGB(255, 129, 129, 129)),
                                 border: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Colors.black,

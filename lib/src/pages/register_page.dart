@@ -102,9 +102,7 @@ class MainRegister extends StatelessWidget {
               ),
               const SizedBox(height: 32),
               ElevatedButton(
-                onPressed: () {
-                  
-                },
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 25, 38, 83),
                   padding:

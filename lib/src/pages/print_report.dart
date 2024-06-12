@@ -48,15 +48,11 @@ class PrintReportPage extends StatelessWidget {
             ),
             ListTile(
               title: Text('Opción 1'),
-              onTap: () {
-               
-              },
+              onTap: () {},
             ),
             ListTile(
               title: Text('Opción 2'),
-              onTap: () {
-                
-              },
+              onTap: () {},
             ),
           ],
         ),
@@ -104,7 +100,6 @@ class PrintReportPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 8),
-
                     Row(
                       children: [
                         Expanded(
@@ -131,16 +126,13 @@ class PrintReportPage extends StatelessWidget {
                               inputFormatters: <TextInputFormatter>[
                                 FilteringTextInputFormatter.digitsOnly
                               ],
-                              style: TextStyle(
-                                  color: Colors
-                                      .black), 
+                              style: TextStyle(color: Colors.black),
                               decoration: InputDecoration(
                                 hintText: 'Orden de produccion',
                                 hintStyle: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.bold,
-                                    color: Color.fromARGB(255, 129, 129,
-                                        129)), 
+                                    color: Color.fromARGB(255, 129, 129, 129)),
                                 border: UnderlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Colors.black,
@@ -152,13 +144,11 @@ class PrintReportPage extends StatelessWidget {
                         ),
                       ],
                     ),
-
                     SizedBox(height: 8),
                     widgets.inputTextGeneral(text: 'Turno'),
                     SizedBox(height: 8),
                     widgets.inputTextGeneral(text: 'Maquina '),
                     SizedBox(height: 8),
-                  
                     Container(
                       width: 380,
                       height: 40,
@@ -181,9 +171,7 @@ class PrintReportPage extends StatelessWidget {
                             firstDate: DateTime(2000),
                             lastDate: DateTime(2024),
                           );
-                          if (pickedDate != null) {
-                           
-                          }
+                          if (pickedDate != null) {}
                         },
                       ),
                     ),
