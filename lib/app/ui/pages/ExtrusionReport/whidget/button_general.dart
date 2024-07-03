@@ -4,20 +4,20 @@ class ButtonGeneral extends StatelessWidget {
   final String text;
   final Color colorValue;
   final double fontSize;
-  final VoidCallback? onPressed; // Hacer la función opcional
 
   const ButtonGeneral({
-    Key? key,
+    super.key,
     required this.text,
     required this.colorValue,
     this.fontSize = 18,
-    this.onPressed, // Marcar como opcional
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onPressed, // Usar onPressed directamente
+      onPressed: () {
+        // Lógica de inicio de sesión
+      },
       style: ElevatedButton.styleFrom(
         backgroundColor: colorValue,
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 150),
@@ -29,7 +29,7 @@ class ButtonGeneral extends StatelessWidget {
         text,
         style: TextStyle(
           fontSize: fontSize,
-          color: Colors.white,
+           color: Colors.white,
           fontWeight: FontWeight.bold,
         ),
       ),
