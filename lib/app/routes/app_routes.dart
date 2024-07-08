@@ -1,6 +1,6 @@
 part of './app_pages.dart';
 abstract class Routes{
-
+  static const PAGEVIEW = '/PageView';
   static const INITIAL = '/';
   static const LOGIN = '/LOGIN';
   static const EXTRUSIONREPORT = '/ExtrusionReport';

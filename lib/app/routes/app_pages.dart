@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:untitled3/app/bindings/Contado_binding.dart';
+import 'package:untitled3/app/bindings/pageview_binding.dart';
 import 'package:untitled3/app/bindings/Login_binding.dart';
 import 'package:untitled3/app/bindings/OrderSealed_binding.dart';
 import 'package:untitled3/app/bindings/extrusionReport_binding.dart';
@@ -13,8 +13,10 @@ import 'package:untitled3/app/bindings/register_binding.dart';
 import 'package:untitled3/app/bindings/semiya_bindin.dart';
 import 'package:untitled3/app/bindings/servidor_binding.dart';
 import 'package:untitled3/app/controllers/orderProduction_controller.dart';
+
+import 'package:untitled3/app/ui/pages/View_page/view_Page.dart';
 import 'package:untitled3/app/ui/pages/ExtrusionReport/Extrusion_page.dart';
-import 'package:untitled3/app/ui/pages/contador_page/contador_page.dart';
+
 import 'package:untitled3/app/ui/pages/gatepage/gate_page.dart';
 import 'package:untitled3/app/ui/pages/home/home_page.dart';
 import 'package:untitled3/app/ui/pages/login/login_page.dart';
@@ -31,7 +33,12 @@ part './app_routes.dart';
  
 abstract class AppPages {
   static final pages = [
-    
+    GetPage(
+      name: Routes.PAGEVIEW, 
+      page: () => ViewPage(),
+      transition: Transition.native,
+      binding: PageViewBinding(),
+    ),
     GetPage(
       name: Routes.LOGIN, 
       page: () => LoginPage(),
